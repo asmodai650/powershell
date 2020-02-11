@@ -1,0 +1,4 @@
+﻿CASE NOT SENSITIVE: zgrep -i "LONGOria" 12122017_TX_Elig.txt.gz > results.txt
+CASE SENSITIVE: zgrep "LONGORIA" 12122017_TX_Elig.txt.gz > results.txt
+ONLY FILENAME: zgrep -l "LONGORIA" 12122017_TX_Elig.txt.gz > results2.txt
+ROW RESULTS: zgrep -n "LONGORIA" 12122017_TX_Elig.txt.gz > results2.txt

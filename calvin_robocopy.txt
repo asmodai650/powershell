@@ -1,0 +1,15 @@
+CALVIN ORIGINAL SCRIPT:
+robocopy E:\BackupPdrive_PROD\2006 Q:\Data\Images\AIMSAFCOM\CB\CLM\2006 /e /COPYALL /E /zb /r:3 /w:6 /log:E:\backuppdrive_prod\E_Data.txt
+
+
+NEW SCRIPT:
+robocopy H:\powershell_test\intake\cob_all_2495\text_file\ H:\powershell_test\intake\cob_all_2495 "PRS COB All.txt" /r:3 /w:6 /log+:H:\powershell_test\work\cob_all_2495\LOGS\copy_log.txt
+
+DEV SERVER: (runs powershell from C$ and script sits on D:\DTTasks\PRS_COB_ALL )
+robocopy F:\data\intake\prs\cob_all_2495\text_file\ F:\data\intake\prs\cob_all_2495\ "PRS COB All.txt" /r:3 /w:6 /log+:F:\data\raw\prs\cob_all_2495\COPY_LOG\copy_log.txt
+
+QA SERVER: (runs powershell from C$ and script sits on D:\DTTasks\PRS_COB_ALL )
+robocopy F:\data\intake\prs\cob_all_2495\text_file\ F:\data\intake\prs\cob_all_2495\ "PRS COB All.txt" /r:3 /w:6 /log:F:\data\raw\prs\cob_all_2495\COPY_LOG\copy_log.txt
+
+PROD SERVER: (runs powershell from C$ and script sits on D:\DTTasks\PRS_COB_ALL )
+robocopy E:\data\intake\prs\cob_all_2495\text_file\ E:\data\intake\prs\cob_all_2495\ "PRS COB All.txt" /r:3 /w:6 /log:E:\data\intake\prs\cob_all_2495\text_file\COPY_LOG\copy_log.txt

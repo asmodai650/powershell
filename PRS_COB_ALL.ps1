@@ -1,0 +1,1 @@
+﻿robocopy E:\data\intake\prs\cob_all_2495\text_file\ E:\data\intake\prs\cob_all_2495\ "PRS COB All.txt" /r:3 /w:6 /log:E:\data\intake\prs\cob_all_2495\text_file\COPY_LOG\copy_log.txt

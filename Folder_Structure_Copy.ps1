@@ -1,0 +1,1 @@
+﻿robocopy "\\apvep17477.aimhealth.com\data\intake\" "\\ibm-c2-b12.aimhealth.com\data\intake\" /e /LEV:3 /xf *
