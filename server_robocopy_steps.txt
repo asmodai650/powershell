@@ -1,0 +1,14 @@
+﻿1. open rdp desktop through herizon
+2. go to NEW server through remote desktop in rdp
+3. use "net use" cmd to clear any connections to matching OLD server
+4. map network drive to OLD server, choose login with different credentials, use AIM credentials. must be able to map the drive!
+5. open new drive, navigate to folder to copy
+6. left click on folder, do NOT double click
+7. left click on File > open windows Powershell > open as admin > click OK
+8. copy / type out robocopy script, click enter
+9.
+
+
+
+
+ROBOCOPY "\\SOURCE PATH\" "\\DESTINATION PATH\" /E /B /XO /R:2 /W:1 /COPY:DAT
