@@ -1,0 +1,5 @@
+﻿	$files = Get-Content "\\apvep17474.aimhealth.com\data3\archive_offsite\remove_archive_files.csv"
+	 foreach ($file in $files) {
+	    Remove-Item -Path $file -force -Recurse -Verbose
+	    } 
+	write-host -foregroundcolor yellow "Delete action complete"
